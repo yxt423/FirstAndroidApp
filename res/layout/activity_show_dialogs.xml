@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+	xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<com.beardedhen.androidbootstrap.BootstrapButton
+		android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:text="dialog1"
+	    bootstrapbutton:bb_roundedCorners="true" 
+		android:layout_gravity="center_horizontal"
+	    bootstrapbutton:bb_type="primary" />
+
+	<com.beardedhen.androidbootstrap.BootstrapButton
+		android:id="@+id/button2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:text="dialog2"
+	    bootstrapbutton:bb_roundedCorners="true" 
+		android:layout_gravity="center_horizontal"
+	    bootstrapbutton:bb_type="primary" />
+	
+	<com.beardedhen.androidbootstrap.BootstrapButton
+		android:id="@+id/button3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:text="dialog3"
+	    bootstrapbutton:bb_roundedCorners="true" 
+		android:layout_gravity="center_horizontal"
+	    bootstrapbutton:bb_type="primary" />
+	
+	<TextView android:id="@+id/selected_labels"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#372c24"
+	    android:layout_margin="10dp"
+        android:text="None" />
+	
+</LinearLayout>

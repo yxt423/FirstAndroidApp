@@ -1,6 +1,5 @@
 package com.firstapp;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +10,21 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		Intent intentLogIn = new Intent(this, LogIn.class);
-		startActivity(intentLogIn);
+		showAppCover();
+	}
+	
+	private void showAppCover() {
+        new Thread() {
+            public void run() {
+                    try {
+                            Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                            e.printStackTrace();
+                    }
+                    Intent intentLogIn = new Intent(MainActivity.this, LogIn.class);
+            		startActivity(intentLogIn);
+                    finish();
+            }
+        }.start();
 	}
 }
