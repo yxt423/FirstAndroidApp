@@ -1,27 +1,25 @@
 package com.firstapp;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.os.Build;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class EventListActivity extends ActionBarActivity {
-
+	
+	private String[] labelItems = new String[] {"label1","label2", "label3", "label4", "label5", "label6", "label7" }; 
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_event_list);
 		
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, 
+		        android.R.layout.simple_list_item_1, labelItems);
+		ListView listView = (ListView) findViewById(R.id.listview1);
+		listView.setAdapter(adapter);
 	}
 
 	@Override

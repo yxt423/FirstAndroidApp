@@ -2,6 +2,8 @@
 <resources>
 
     <string name="app_name">FirstApp</string>
+    <string name="app_id">277238822444993</string>
+    
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     

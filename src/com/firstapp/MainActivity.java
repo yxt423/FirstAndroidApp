@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
         new Thread() {
             public void run() {
                     try {
-                            Thread.sleep(100);
+                            Thread.sleep(10);
                     } catch (InterruptedException e) {
                             e.printStackTrace();
                     }

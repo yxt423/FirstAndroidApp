@@ -6,29 +6,19 @@
     android:orientation="vertical" android:padding="30dip" >
           
           <!--  Email Label -->
-          <TextView android:layout_width="fill_parent"
+        <TextView android:id="@+id/welcome"
+              	android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#372c24"
-                android:text="Email"/>
+                android:text="None"/>
           
-          <EditText android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
-                android:layout_marginBottom="20dip"
-                android:singleLine="true"/>
-          
-          <!--  Password Label -->
-          <TextView android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#372c24"
-                android:text="Password"/>
-          
-          <EditText android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
-                android:singleLine="true"
-                android:password="true"/>
-          
+<!-- 		<TextView android:id="@+id/selected_labels"
+			    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="#372c24"
+			    android:layout_margin="10dp"
+		        android:text="None" /> -->
+	
           <!-- Login button -->
  		<com.beardedhen.androidbootstrap.BootstrapButton
  		    android:id="@+id/login_button"
@@ -45,7 +35,17 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_marginTop="10dp"
-		    android:text="show_dialogs"
+		    android:text="show dialogs"
+		    bootstrapbutton:bb_roundedCorners="true" 
+            android:layout_gravity="center_horizontal"
+		    bootstrapbutton:bb_type="primary"/>
+ 		 
+ 		 <com.beardedhen.androidbootstrap.BootstrapButton
+ 		    android:id="@+id/show_listview_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+		    android:text="show event list"
 		    bootstrapbutton:bb_roundedCorners="true" 
             android:layout_gravity="center_horizontal"
 		    bootstrapbutton:bb_type="primary"/>
